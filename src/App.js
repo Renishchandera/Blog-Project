@@ -33,7 +33,7 @@ const dispatch = useDispatch();
   }, [dispatch])
   if(loading)
   {
-    return <div>Loading...</div>
+    return <div className="w-full flex justify-center items-center pt-16 text-center text-lg text-blue-700">Loading...</div>
   }else
   {
     return ( 
@@ -42,7 +42,7 @@ const dispatch = useDispatch();
 
           <div className='w-full block flex flex-col items-center'>
             <Header/>
-            <main className='shadow-sm shadow-red-500 hover:shadow transition-all'>
+            <main className='shadow-sm hover:shadow transition-all'>
                <Outlet/>  
             </main>
             <Footer/>
