@@ -24,6 +24,11 @@ export default function RTE({
                         {
                             height: 500,
                             menubar: true,
+                            mobile: {
+                                menubar: true,
+                                plugins: 'autosave lists autolink',
+                                toolbar: 'undo bold italic styles'
+                              },
                             plugins: [
                                 'advlist autolink lists link image charmap print preview anchor',
                                 'searchreplace visualblocks code fullscreen',
