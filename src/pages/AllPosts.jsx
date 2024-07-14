@@ -12,19 +12,22 @@ function AllPosts(){
         })
     }, [])
     return (
-        <div className="w-full py-8">
-                    <Container> 
-                       <div className="flex flex-wrap">
-                       {
-                            posts && 
-                            posts.map((post) => (
-                                <div className="p-2 w-1/4" key={post.$id}>
-                                    <PostCard  {...post} />
-                                </div>
-                            ))
-                        }
-                       </div>
-                    </Container>
+        <div className="w-full py-8 bg-gray-100">
+            <Container className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
+                <div className="flex flex-wrap -mx-4">
+                    {
+                        posts && 
+                        posts.map((post) => (
+                            <div className="p-4 w-full md:w-1/2 xl:w-1/3" key={post.$id}>
+                                <PostCard 
+                                    className="bg-white rounded shadow-md p-4"
+                                    {...post} 
+                                />
+                            </div>
+                        ))
+                    }
+                </div>
+            </Container>
         </div>
 
     )

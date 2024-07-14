@@ -43,7 +43,7 @@ const dispatch = useDispatch();
           <div className='w-full block flex flex-col items-center'>
             <Header/>
             <main className='shadow-sm shadow-red-500 hover:shadow transition-all'>
-              TODO BLOG:      <Outlet/>  
+               <Outlet/>  
             </main>
             <Footer/>
           </div>
