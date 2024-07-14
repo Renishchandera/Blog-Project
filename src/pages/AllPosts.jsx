@@ -12,7 +12,7 @@ function AllPosts(){
         })
     }, [])
     return (
-        <div className="w-full py-8 bg-gray-300">
+        <div className="w-full py-8 bg-gray-300 w-screen p-2">
             <Container className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
                 <div className="flex flex-wrap mx-4 divide-y-2 divide-gray-500">
                     {

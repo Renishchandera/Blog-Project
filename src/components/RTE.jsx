@@ -5,7 +5,7 @@ export default function RTE({
     name,
     control,
     label,
-    defaultValue = "This is Default text"
+    defaultValue = "<p>This is Default text</p>"
 
 })
 {

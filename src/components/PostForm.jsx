@@ -108,8 +108,14 @@ function PostForm({ post }) {
             </div>
             <div className="w-1/3 px-2">
                     <Input
+                    
                     label="Featured Image :"
-                    type="file" className="mb-4"
+                    type="file" className="block w-full text-sm text-slate-500
+                    file:mr-4 file:py-1 file:px-1
+                    file:rounded-full file:border-0
+                    file:text-xs file:font-semibold
+                    file:bg-violet-50 file:text-violet-700
+                    hover:file:bg-violet-100"
                     accept="image/png, image/jpg, image/ jpeg, image/gif" 
                     {...register("image", { required: !post })}
                     />
