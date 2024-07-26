@@ -28,11 +28,12 @@ function Signup()
                 const userData = await authService.getCurrentUser()
                 if(userData){
                     dispatch(login(userData))
-                    navigate('/')
+                    navigate('/login');
                 }
             }
         } catch (error) {
             setError(error.message);
+            alert("You account has created! Login Now");
         }
     }
     return (
