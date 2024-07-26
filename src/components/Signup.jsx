@@ -29,11 +29,11 @@ function Signup()
                 if(userData){
                     dispatch(login(userData))
                     navigate('/login');
+                    alert("You account has created! Login Now");
                 }
             }
         } catch (error) {
             setError(error.message);
-            alert("You account has created! Login Now");
         }
     }
     return (
